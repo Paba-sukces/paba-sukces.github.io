@@ -1,0 +1,1257 @@
+<!doctype html>
+<html lang="pl" data-page-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Nowoczesny przewodnik po węglu drzewnym: poznaj smak, kontrolę żaru, zrównoważone źródła oraz interaktywne narzędzia, które ułatwią planowanie perfekcyjnego grillowania." />
+  <meta name="theme-color" content="#04070f" />
+  <title>Węgiel drzewny — rytuał ognia na miarę 2025</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='1' y2='0'%3E%3Cstop offset='0' stop-color='%23040a1f'/%3E%3Cstop offset='1' stop-color='%230d1d46'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Cpath d='M32 14c-3 5-9 9-9 16 0 7 5 12 9 13 4-1 9-6 9-13 0-7-6-11-9-16Zm0 29.5c-5.5-1.3-10-6.5-10-13.5 0-5.4 3.6-9.4 6.4-12.6a38.1 38.1 0 0 0 2.6-3.4 38 38 0 0 0 2.6 3.4c2.8 3.2 6.4 7.2 6.4 12.6 0 7-4.5 12.2-10 13.5Zm0-24.5a7 7 0 0 0-7 7 7 7 0 0 0 7 7 7 7 0 0 0 7-7 7 7 0 0 0-7-7Zm0 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10Z' fill='none' stroke='%23f5f7ff' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <style>
+    :root {
+      color-scheme: dark;
+      --font-sans: "Manrope", "Poppins", "Inter", "Segoe UI", "SF Pro Display", "Helvetica Neue", sans-serif;
+      --font-display: "Clash Display", "Manrope", "Poppins", "Inter", "Segoe UI", sans-serif;
+      --bg-body: #04070f;
+      --bg-gradient: radial-gradient(circle at 20% 20%, rgba(66, 108, 255, 0.18), transparent 45%),
+        radial-gradient(circle at 80% 0%, rgba(92, 242, 214, 0.22), transparent 50%),
+        linear-gradient(145deg, #050814 0%, #080b19 45%, #04070f 100%);
+      --bg-surface: rgba(14, 19, 34, 0.75);
+      --bg-surface-strong: rgba(13, 18, 33, 0.9);
+      --glass-border: rgba(148, 163, 255, 0.25);
+      --text-primary: #f4f6ff;
+      --text-secondary: rgba(228, 232, 255, 0.72);
+      --text-muted: rgba(188, 196, 233, 0.6);
+      --accent: #5cf2d6;
+      --accent-strong: #8a9dff;
+      --accent-warm: #ffaf87;
+      --shadow-color: rgba(10, 14, 30, 0.6);
+      --radius-lg: 28px;
+      --radius-md: 18px;
+      --radius-sm: 12px;
+      --trans-fast: 180ms cubic-bezier(0.33, 1, 0.68, 1);
+      --trans-slow: 520ms cubic-bezier(0.16, 1, 0.3, 1);
+      --max-width: min(1120px, 92vw);
+      --blur: 22px;
+    }
+
+    body[data-theme="light"] {
+      color-scheme: light;
+      --bg-body: #f5f7ff;
+      --bg-gradient: radial-gradient(circle at 20% 20%, rgba(138, 157, 255, 0.28), transparent 50%),
+        radial-gradient(circle at 80% 0%, rgba(92, 242, 214, 0.22), transparent 55%),
+        linear-gradient(145deg, #ffffff 0%, #f3f6ff 48%, #e8ecf9 100%);
+      --bg-surface: rgba(255, 255, 255, 0.76);
+      --bg-surface-strong: rgba(255, 255, 255, 0.92);
+      --glass-border: rgba(62, 82, 160, 0.18);
+      --text-primary: #0c1226;
+      --text-secondary: rgba(31, 41, 82, 0.72);
+      --text-muted: rgba(52, 66, 122, 0.58);
+      --accent: #3664ff;
+      --accent-strong: #0f7b8d;
+      --accent-warm: #ff7a66;
+      --shadow-color: rgba(14, 26, 65, 0.12);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    ::selection {
+      background: rgba(92, 242, 214, 0.24);
+      color: inherit;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: var(--font-sans);
+      background: var(--bg-gradient);
+      color: var(--text-primary);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      line-height: 1.55;
+      letter-spacing: 0.01em;
+      -webkit-font-smoothing: antialiased;
+      transition: background 1s ease, color 0.5s ease;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(circle at 12% 80%, rgba(255, 175, 135, 0.06), transparent 55%),
+        radial-gradient(circle at 80% 35%, rgba(90, 167, 255, 0.08), transparent 60%);
+      pointer-events: none;
+      z-index: -2;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      backdrop-filter: blur(calc(var(--blur) * 0.4));
+      pointer-events: none;
+      z-index: -3;
+    }
+
+    .scroll-progress {
+      position: fixed;
+      inset: 0 0 auto;
+      height: 4px;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.03);
+      overflow: hidden;
+    }
+
+    .scroll-progress__bar {
+      display: block;
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, var(--accent) 0%, var(--accent-warm) 100%);
+      transform-origin: left;
+      transition: transform var(--trans-fast);
+    }
+
+    .app-header {
+      position: sticky;
+      top: 16px;
+      z-index: 900;
+      width: min(1080px, 92vw);
+      margin: 18px auto 0;
+    }
+
+    .app-header__shell {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 24px;
+      border-radius: calc(var(--radius-lg) - 6px);
+      background: var(--bg-surface);
+      border: 1px solid var(--glass-border);
+      box-shadow: 0 18px 40px -22px var(--shadow-color);
+      backdrop-filter: blur(var(--blur));
+      position: relative;
+      isolation: isolate;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: var(--font-display);
+      font-size: clamp(1.05rem, 1.2vw + 1rem, 1.5rem);
+      font-weight: 600;
+      color: var(--text-primary);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .brand__glyph {
+      width: 38px;
+      height: 38px;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(92, 242, 214, 0.2), rgba(138, 157, 255, 0.35));
+      border: 1.2px solid rgba(255, 255, 255, 0.28);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14), 0 12px 25px -18px rgba(92, 242, 214, 0.7);
+    }
+
+    .brand__glyph svg {
+      width: 18px;
+      height: 18px;
+      color: #f9fbff;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .nav__link {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      padding: 0.45rem 0;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color var(--trans-fast);
+    }
+
+    .nav__link::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 -6px 0;
+      height: 2px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-warm));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform var(--trans-fast);
+    }
+
+    .nav__link:hover,
+    .nav__link:focus-visible {
+      color: var(--text-primary);
+    }
+
+    .nav__link:hover::after,
+    .nav__link:focus-visible::after,
+    .nav__link.is-active::after {
+      transform: scaleX(1);
+    }
+
+    .nav__link.is-active {
+      color: var(--text-primary);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .btn, .btn-secondary {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      cursor: pointer;
+      transition: transform var(--trans-fast), box-shadow var(--trans-fast), background var(--trans-fast), color var(--trans-fast);
+      text-decoration: none;
+      padding: 0.65rem 1.45rem;
+      font-size: 0.95rem;
+    }
+
+    .btn {
+      color: #04070f;
+      background: linear-gradient(120deg, var(--accent) 0%, var(--accent-warm) 100%);
+      box-shadow: 0 18px 28px -18px rgba(92, 242, 214, 0.9);
+    }
+
+    .btn::after {
+      content: "";
+      position: absolute;
+      inset: 2px;
+      border-radius: inherit;
+      border: 1px solid rgba(255, 255, 255, 0.32);
+      opacity: 0;
+      transition: opacity var(--trans-fast);
+    }
+
+    .btn:hover, .btn:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 22px 32px -16px rgba(92, 242, 214, 0.72);
+    }
+
+    .btn:hover::after, .btn:focus-visible::after {
+      opacity: 1;
+    }
+
+    .btn-secondary {
+      color: var(--text-primary);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    }
+
+    .btn-secondary:hover, .btn-secondary:focus-visible {
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .btn-secondary::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      opacity: 0;
+      transition: opacity var(--trans-fast);
+    }
+
+    .btn-secondary:hover::after, .btn-secondary:focus-visible::after {
+      opacity: 1;
+    }
+
+    .theme-switch {
+      width: 46px;
+      height: 46px;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(255, 255, 255, 0.06);
+      display: grid;
+      place-items: center;
+      color: var(--text-primary);
+      cursor: pointer;
+      transition: transform var(--trans-fast), background var(--trans-fast), border-color var(--trans-fast);
+    }
+
+    .theme-switch svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .theme-switch:hover, .theme-switch:focus-visible {
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.22);
+    }
+
+    .nav-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text-primary);
+      cursor: pointer;
+      transition: transform var(--trans-fast), background var(--trans-fast), border-color var(--trans-fast);
+    }
+
+    .nav-toggle:hover, .nav-toggle:focus-visible {
+      transform: translateY(-1px);
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.22);
+    }
+
+    main {
+      width: 100%;
+    }
+
+    section {
+      position: relative;
+      padding: clamp(4.5rem, 8vw, 6.75rem) 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .section__inner {
+      width: var(--max-width);
+      display: flex;
+      flex-direction: column;
+      gap: clamp(2.5rem, 6vw, 3.5rem);
+    }
+
+    .section__header {
+      max-width: 620px;
+    }
+
+    .eyebrow {
+      font-size: 0.82rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .section__title {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 3.8vw, 3.3rem);
+      line-height: 1.1;
+      margin: 0.6rem 0 1rem;
+      letter-spacing: -0.01em;
+    }
+
+    .section__description {
+      margin: 0;
+      font-size: clamp(1rem, 0.8vw + 1rem, 1.1rem);
+      color: var(--text-secondary);
+    }
+
+    .hero {
+      padding-top: clamp(6rem, 12vw, 9rem);
+      align-items: center;
+    }
+
+    .hero__inner {
+      width: var(--max-width);
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: clamp(2rem, 4vw, 3rem);
+      align-items: center;
+      position: relative;
+      isolation: isolate;
+    }
+
+    .hero__content {
+      grid-column: span 7;
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero__headline {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 5.2vw, 4.6rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin: 0;
+    }
+
+    .hero__headline span {
+      color: var(--accent);
+    }
+
+    .rotator {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .rotator::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-bottom: 0.1em solid rgba(255, 255, 255, 0.24);
+      opacity: 0.35;
+      transform: translateY(0.1em);
+    }
+
+    .hero__text {
+      margin: 0;
+      font-size: clamp(1rem, 0.8vw + 1rem, 1.15rem);
+      color: var(--text-secondary);
+      max-width: 540px;
+    }
+
+    .hero__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .hero__meta {
+      display: grid;
+      gap: 0.65rem;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .hero__visual {
+      grid-column: span 5;
+      position: relative;
+    }
+
+    .hero__visual::before,
+    .hero__visual::after {
+      content: "";
+      position: absolute;
+      inset: -18% -28% auto;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(92, 242, 214, 0.45), transparent 55%);
+      filter: blur(45px);
+      z-index: -1;
+      animation: float 14s ease-in-out infinite;
+    }
+
+    .hero__visual::after {
+      inset: auto -12% -18% -28%;
+      background: radial-gradient(circle, rgba(138, 157, 255, 0.4), transparent 55%);
+      animation-duration: 17s;
+      animation-delay: 3s;
+    }
+
+    .hero-panel {
+      position: relative;
+      background: var(--bg-surface-strong);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--glass-border);
+      padding: clamp(1.75rem, 4vw, 2.4rem);
+      display: grid;
+      gap: 1.6rem;
+      box-shadow: 0 32px 60px -40px rgba(0, 0, 0, 0.8);
+      overflow: hidden;
+    }
+
+    .hero-panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(130deg, rgba(255, 255, 255, 0.04), transparent 60%);
+      pointer-events: none;
+    }
+
+    .hero-panel__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      border-radius: 999px;
+      padding: 0.35rem 0.75rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      background: rgba(92, 242, 214, 0.1);
+      color: var(--accent);
+      border: 1px solid rgba(92, 242, 214, 0.28);
+    }
+
+    .hero-panel__grid {
+      display: grid;
+      gap: 1.1rem;
+    }
+
+    .stat {
+      display: grid;
+      gap: 0.2rem;
+      padding: 0.9rem 1rem;
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      transition: transform var(--trans-fast), border-color var(--trans-fast), background var(--trans-fast);
+    }
+
+    .stat:hover {
+      transform: translateY(-3px);
+      border-color: rgba(92, 242, 214, 0.3);
+      background: rgba(92, 242, 214, 0.08);
+    }
+
+    .stat__value {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 2vw, 2.1rem);
+      letter-spacing: -0.02em;
+    }
+
+    .stat__label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(4, 7, 19, 0.9), rgba(14, 21, 40, 0.95));
+      border: 1.4px solid rgba(255, 255, 255, 0.4);
+      display: inline-grid;
+      place-items: center;
+      color: #f6f9ff;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12), 0 10px 24px -18px rgba(0, 0, 0, 0.6);
+    }
+
+    .icon svg {
+      width: 20px;
+      height: 20px;
+      stroke: currentColor;
+      stroke-width: 1.6;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: clamp(1.2rem, 4vw, 2rem);
+    }
+
+    .feature-card {
+      position: relative;
+      padding: 1.75rem;
+      border-radius: var(--radius-md);
+      background: var(--bg-surface);
+      border: 1px solid var(--glass-border);
+      box-shadow: 0 24px 48px -36px var(--shadow-color);
+      display: grid;
+      gap: 1.1rem;
+      transition: transform var(--trans-fast), box-shadow var(--trans-fast), border-color var(--trans-fast);
+      overflow: hidden;
+    }
+
+    .feature-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(130deg, rgba(255, 255, 255, 0.08), transparent 55%);
+      opacity: 0;
+      transition: opacity var(--trans-fast);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-6px) scale(1.01);
+      box-shadow: 0 32px 72px -32px rgba(0, 0, 0, 0.6);
+      border-color: rgba(92, 242, 214, 0.35);
+    }
+
+    .feature-card:hover::after {
+      opacity: 1;
+    }
+
+    .feature-card__title {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      margin: 0;
+    }
+
+    .feature-card__text {
+      margin: 0;
+      color: var(--text-secondary);
+    }
+
+    .feature-card__meta {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .highlight {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.4rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid rgba(92, 242, 214, 0.3);
+      background: rgba(92, 242, 214, 0.12);
+      color: var(--accent);
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .ritual {
+      display: grid;
+      gap: clamp(2rem, 6vw, 3rem);
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+      align-items: start;
+    }
+
+    .ritual__steps {
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    .ritual__trigger {
+      position: relative;
+      width: 100%;
+      padding: 1.1rem 1.4rem;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.02);
+      color: var(--text-secondary);
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      text-align: left;
+      cursor: pointer;
+      transition: transform var(--trans-fast), border-color var(--trans-fast), background var(--trans-fast), color var(--trans-fast);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+  </style>
+</head>
+
+<body data-theme="dark">
+  <div class="scroll-progress" aria-hidden="true">
+    <span class="scroll-progress__bar"></span>
+  </div>
+  <header class="app-header" id="start">
+    <div class="app-header__shell">
+      <a class="brand" href="#start">
+        <span class="brand__glyph" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 17c3-1 4-3 5-7 1 4 2 6 5 7-2 3-5 4-5 4s-3-1-5-4Z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+        Żar Mistrzowski
+      </a>
+      <nav class="nav" aria-label="Główne" id="primaryNav">
+        <a class="nav__link" data-nav href="#hero">Start</a>
+        <a class="nav__link" data-nav href="#wizja">Dlaczego</a>
+        <a class="nav__link" data-nav href="#rytual">Rytuał</a>
+        <a class="nav__link" data-nav href="#doswiadczenie">Doświadczenie</a>
+        <a class="nav__link" data-nav href="#zrownowazony">Zrównoważenie</a>
+        <a class="nav__link" data-nav href="#faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-switch" type="button" aria-label="Przełącz motyw" id="themeSwitch" title="Przełącz motyw">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 4.5c-1.8 0-3.4.7-4.6 1.9C6.3 7.6 5.6 9.2 5.6 11c0 3.5 2.9 6.4 6.4 6.4 1.8 0 3.4-.7 4.6-1.9 1.2-1.2 1.9-2.8 1.9-4.6 0-3.5-2.9-6.4-6.4-6.4Zm0-3.1v2.2m0 17.6v2.3m-9.1-9.1h2.2m14.8 0h2.2M5.1 5.1l1.6 1.6m10.6 10.6 1.6 1.6m0-13.8-1.6 1.6M6.7 17.3 5.1 18.9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" id="navToggle" title="Otwórz menu">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <span class="eyebrow">Nowa generacja grillowania</span>
+          <h1 class="hero__headline">
+            Węgiel drzewny — <span class="rotator" data-words="oczyszczony smak,szlachetny aromat,pełna kontrola,świadoma energia">oczyszczony smak</span>
+          </h1>
+          <p class="hero__text">
+            Wypracuj własny rytuał ognia z przewodnikiem, który łączy kunszt rzemiosła, odpowiedzialność środowiskową i inteligentne narzędzia planowania. Wszystko w jednym, eleganckim doświadczeniu.
+          </p>
+          <div class="hero__actions">
+            <a class="btn microinteraction" href="#doswiadczenie">Zaplanuj żar doskonały</a>
+            <button class="btn-secondary microinteraction" type="button" data-open-dialog>Poproś o indywidualny briefing</button>
+          </div>
+          <div class="hero__meta">
+            <span>✓ Zestrojone wskazówki dla steków, warzyw i wypieków ogniskowych.</span>
+            <span>✓ Zrównoważone źródła opału i pełna kontrola emisji.</span>
+            <span>✓ Mikrointerakcje, które prowadzą Cię intuicyjnie przez całą podróż.</span>
+          </div>
+        </div>
+        <div class="hero__visual" data-tilt>
+          <article class="hero-panel">
+            <span class="hero-panel__badge">Panel Mistrza</span>
+            <div class="hero-panel__grid">
+              <div class="stat">
+                <span class="stat__value" data-hero-temp>480°C</span>
+                <span class="stat__label">strefa sear-ready w 18 minut</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value" data-hero-savings>32%</span>
+                <span class="stat__label">mniej zużycia węgla przy technice dwustrefowej</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value" data-hero-impact>100%</span>
+                <span class="stat__label">certyfikowanego drewna z kontrolowanych upraw</span>
+              </div>
+            </div>
+            <p class="microcopy">Panel aktualizuje dane na podstawie Twoich preferencji intensywności. Zainicjuj zmianę w sekcji "Doświadczenie".</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="wizja">
+      <div class="section__inner">
+        <div class="section__header reveal">
+          <span class="eyebrow">Wartość, która robi różnicę</span>
+          <h2 class="section__title">Elegancja, która rodzi się z ognia i odpowiedzialności</h2>
+          <p class="section__description">Kolekcja przemyślanych praktyk i technologii, dzięki którym każde grillowanie staje się manifestem dobrego smaku oraz troski o planetę.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal" data-tilt>
+            <span class="highlight">Signature Flame</span>
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3s-4 3-4 7 3 7 4 7 4-3 4-7-4-7-4-7Zm0 15c-2.8-.7-5-3.5-5-7 0-2.8 1.8-5 3.4-6.7.6-.7 1-1.4 1.6-2.3.6.9 1 1.6 1.6 2.3C15.2 6 17 8.2 17 11c0 3.5-2.2 6.3-5 7Z" />
+                <path d="M12 8.8a2.2 2.2 0 1 0 0 4.4 2.2 2.2 0 0 0 0-4.4Z" />
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Profil żaru szyty na miarę</h3>
+            <p class="feature-card__text">Podpowiedzi temperatury, czasy etapów i rekomendacje ustawień wlotów powietrza dopasowane do rodzaju drewna oraz potrawy.</p>
+            <span class="feature-card__meta">Aktualizacje w czasie rzeczywistym na bazie Twoich ustawień.</span>
+          </article>
+          <article class="feature-card reveal" data-tilt>
+            <span class="highlight">Zero Waste</span>
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M5.5 5.5h13M10 4h4m-6 4 1 12h6l1-12M4 5.5l1 15h14l1-15" />
+                <path d="M9 9h6" />
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Kontrolowana gospodarka opałem</h3>
+            <p class="feature-card__text">Optymalizator zużycia minimalizuje straty i proponuje wtórne wykorzystanie popiołu jako minerału glebowego.</p>
+            <span class="feature-card__meta">Automatyczne przypomnienia regeneracji i czyszczenia sprzętu.</span>
+          </article>
+          <article class="feature-card reveal" data-tilt>
+            <span class="highlight">Smart Ritual</span>
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 4v4m0 8v4m4-12h4m-4 4h4M4 8h4m-4 4h4m8-6.5-2 3 2 3m-8-6 2 3-2 3" />
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Harmonia temperatur</h3>
+            <p class="feature-card__text">System dwustrefowy z wizualnym feedbackiem na temat przepływu powietrza oraz koloru żaru.</p>
+            <span class="feature-card__meta">Wbudowane alerty bezpieczeństwa i rekomendacje dawek tlenu.</span>
+          </article>
+          <article class="feature-card reveal" data-tilt>
+            <span class="highlight">Eco Trace</span>
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3c-4.4 3.4-7 6.7-7 9.9C5 17.6 8.2 21 12 21s7-3.4 7-8.1C19 9.7 16.4 6.4 12 3Zm0 15.7c-2.8 0-5-2.5-5-5.8 0-1.6.8-3.6 2.5-5.9 1.2-1.6 2.1-2.5 2.5-3 0 .5 1.3 1.5 2.5 3 1.7 2.3 2.5 4.3 2.5 5.9 0 3.3-2.2 5.8-5 5.8Z" />
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Pełna transparentność pochodzenia</h3>
+            <p class="feature-card__text">Śledź certyfikację FSC i profil emisji CO₂ każdej partii węgla, korzystając z mapy źródeł i raportów regeneracji lasu.</p>
+            <span class="feature-card__meta">Kompatybilne z raportowaniem ESG i inicjatywami zeroemisyjnymi.</span>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="rytual">
+      <div class="section__inner">
+        <div class="section__header reveal">
+          <span class="eyebrow">Płynność kroków</span>
+          <h2 class="section__title">Rytuał rozpalania, który prowadzi za rękę</h2>
+          <p class="section__description">Dotknij etapu, aby zobaczyć rekomendacje temperatur, wizualne wskaźniki koloru żaru oraz mikro rady bezpieczeństwa.</p>
+        </div>
+        <div class="ritual">
+          <div class="ritual__steps">
+            <button class="ritual__trigger is-active" type="button" data-step="1" data-title="Rozbudź żar z warstwą tlenu" data-description="Wypełnij komin równą warstwą, układając większe kawałki na spodzie, a drobniejsze na górze. Ustaw wlot powietrza na 80% i podpal naturalną rozpałkę od kilku stron." data-tip="Idealny kolor płomienia to bursztynowy z odcieniami błękitu — oznacza czyste spalanie.">
+              <span class="step-label">1. Priming</span>
+            </button>
+            <button class="ritual__trigger" type="button" data-step="2" data-title="Ujarzmij żar dwustrefowo" data-description="Przełóż rozpalone kawałki na ruszt paleniska i uformuj strefę bezpośrednią oraz pośrednią. Wlot dolny przymknij do 40%, by złapać kontrolę nad temperaturą." data-tip="Jeśli na powierzchni węgla widzisz srebrzysty popiół — to sygnał, że możesz rozpocząć searing.">
+              <span class="step-label">2. Structuring</span>
+            </button>
+            <button class="ritual__trigger" type="button" data-step="3" data-title="Balansuj temperaturę i aromat" data-description="Dorzucaj pojedyncze kawałki co 12–15 minut, aby podtrzymać równy żar. Kontroluj kolor dymu — półprzezroczysty oznacza idealne spalanie." data-tip="Dodaj wiórki drzew owocowych tylko na gorące punkty — zwiększysz aromat bez nagłego spadku temperatury.">
+              <span class="step-label">3. Harmonizing</span>
+            </button>
+            <button class="ritual__trigger" type="button" data-step="4" data-title="Domknij proces świadomie" data-description="Po serii dań zamknij dopływ powietrza, pozostawiając pokrywę uchyloną na 10°. Po wygaszeniu przesiej popiół, odzyskując czyste bryły." data-tip="Przechowuj odzyskane kawałki w stalowym pojemniku z pokrywką — przydadzą się jako starter.">
+              <span class="step-label">4. Sustain</span>
+            </button>
+          </div>
+          <div class="ritual__panel">
+            <h3 data-ritual-title>Rozbudź żar z warstwą tlenu</h3>
+            <p data-ritual-description>Wypełnij komin równą warstwą, układając większe kawałki na spodzie, a drobniejsze na górze. Ustaw wlot powietrza na 80% i podpal naturalną rozpałkę od kilku stron.</p>
+            <span class="tip">
+              <svg class="icon" aria-hidden="true">
+                <use href="#icon-spark"></use>
+              </svg>
+              <span data-ritual-tip>Idealny kolor płomienia to bursztynowy z odcieniami błękitu — oznacza czyste spalanie.</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="doswiadczenie">
+      <div class="section__inner">
+        <div class="section__header reveal">
+          <span class="eyebrow">Inteligentna personalizacja</span>
+          <h2 class="section__title">Zaprojektuj swoje doświadczenie żaru</h2>
+          <p class="section__description">Dostosuj intensywność, oblicz ilość węgla i zobacz, jak zmienią się parametry panelu mistrza. Każdy ruch suwaka uruchamia subtelne mikroanimacje.</p>
+        </div>
+        <div class="experience">
+          <article class="experience-card reveal" data-tilt>
+            <div class="range-group">
+              <div class="range-label">
+                <span>Intensywność żaru</span>
+                <span class="range-value" id="intensityLabel">3 — Mistrzowski balans</span>
+              </div>
+              <input type="range" id="intensityRange" min="1" max="5" value="3" aria-label="Intensywność żaru" />
+              <p class="microcopy" id="intensityCopy">Idealna równowaga między searingiem a wolnym dopiekaniem — rekomendacja dla steków porterhouse.</p>
+            </div>
+            <ul class="microcopy">
+              <li>Kolor żaru: <strong id="glowShade">perłowy grafit</strong></li>
+              <li>Przepływ powietrza: <strong id="airflow">50%</strong></li>
+              <li>Czas do stabilizacji: <strong id="stabilization">12 minut</strong></li>
+            </ul>
+          </article>
+          <article class="experience-card reveal" data-tilt>
+            <div class="calc">
+              <div class="calc__grid">
+                <label class="field">
+                  <span>Liczba gości</span>
+                  <input type="number" id="calcPersons" min="1" value="6" />
+                </label>
+                <label class="field">
+                  <span>Czas grillowania (h)</span>
+                  <input type="number" id="calcHours" step="0.5" min="0.5" value="2" />
+                </label>
+                <label class="field">
+                  <span>Typ spotkania</span>
+                  <select id="calcStyle">
+                    <option value="klasyczny">Klasyczny searing + slow cook</option>
+                    <option value="szybki">Ekspresowe burgery</option>
+                    <option value="slow">Długie wędzenie</option>
+                  </select>
+                </label>
+              </div>
+              <div class="pill-group" role="radiogroup" aria-label="Preferencja aromatu">
+                <button class="pill is-active" type="button" data-aroma="neutral">Czysty smak</button>
+                <button class="pill" type="button" data-aroma="owocowy">Owocowe akcenty</button>
+                <button class="pill" type="button" data-aroma="dymny">Dymny charakter</button>
+              </div>
+              <div class="calc__result" id="calcResult">
+                Potrzebujesz <strong>4.3&nbsp;kg</strong> węgla, co zapewni <strong>2 strefy</strong> pracy i 18% rezerwy na dosypywanie.
+              </div>
+              <p class="microcopy" id="aromaHint">Wybierz neutralny profil, aby zachować naturalny smak produktów premium.</p>
+            </div>
+          </article>
+          <article class="experience-card reveal" data-tilt>
+            <h3 class="feature-card__title">Tryb degustacyjny</h3>
+            <p class="feature-card__text">Skorzystaj z playlisty temperatur dla degustacji — od chrupiących warzyw przez sery po desery z rusztu. Każda rekomendacja zawiera sugestię harmonizujących napojów.</p>
+            <ul class="microcopy">
+              <li><strong>T: 180°C</strong> — warzywa glazurowane, cydr rzemieślniczy.</li>
+              <li><strong>T: 240°C</strong> — halloumi i flatbread, kwaśne Rieslingi.</li>
+              <li><strong>T: 320°C</strong> — antrykot dry-aged, naturalne pet-naty.</li>
+            </ul>
+            <button class="btn-secondary microinteraction" type="button" data-open-dialog>Zamów spersonalizowaną playlistę</button>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="zrownowazony">
+      <div class="section__inner">
+        <div class="section__header reveal">
+          <span class="eyebrow">Odpowiedzialny łańcuch</span>
+          <h2 class="section__title">Od drzewa do żaru — ścieżka transparentna jak kryształ</h2>
+          <p class="section__description">Śledź każdy etap zrównoważonej podróży węgla drzewnego i odkryj, jak możesz zamknąć obieg materiału w swoim ogrodzie.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline__item reveal">
+            <h3 class="timeline__title">Selekcja drewna w gospodarstwach agroforestry</h3>
+            <p class="timeline__text">Partnerujemy z plantacjami mieszanymi, które łączą produkcję drewna z nasadzeniami regeneracyjnymi. Każdy worek posiada QR z geolokalizacją.</p>
+            <span class="timeline__meta">Ślad węglowy: -12%</span>
+          </article>
+          <article class="timeline__item reveal">
+            <h3 class="timeline__title">Piroliza w piecach o obiegu zamkniętym</h3>
+            <p class="timeline__text">Ciepło odpadowe odzyskujemy do suszenia kolejnych partii, a gazy wprowadzamy do filtrów ceramicznych. To minimalizuje emisję o 34% względem klasycznych metod.</p>
+            <span class="timeline__meta">Energia własna: 78%</span>
+          </article>
+          <article class="timeline__item reveal">
+            <h3 class="timeline__title">Logistyka niskoemisyjna</h3>
+            <p class="timeline__text">Wysyłamy paczki w modułowych opakowaniach wielokrotnego użytku i łączymy dostawy z ekologicznymi produktami partnerów.</p>
+            <span class="timeline__meta">Recykling opakowań: 92%</span>
+          </article>
+          <article class="timeline__item reveal">
+            <h3 class="timeline__title">Popiół jako booster gleby</h3>
+            <p class="timeline__text">Po grillowaniu przesiej popiół, a czysty materiał wykorzystaj jako nawóz mineralny lub składnik biocharu. Aplikacja przypomni o idealnych proporcjach.</p>
+            <span class="timeline__meta">Zamknięcie obiegu: 100%</span>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="section__inner">
+        <div class="section__header reveal">
+          <span class="eyebrow">Twoje pytania</span>
+          <h2 class="section__title">FAQ, które reaguje na Twoje wybory</h2>
+          <p class="section__description">Rozwiń odpowiedź, a podpowiemy Ci dodatkowe kroki dopasowane do aktualnej intensywności żaru i wybranego aromatu.</p>
+        </div>
+        <div class="faq">
+          <details class="reveal">
+            <summary>
+              Czy muszę używać komina do rozpalania?
+              <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </summary>
+            <p>Kominy skracają czas do stabilizacji nawet o 30%. Jeśli rozpalasz bez niego, wykorzystaj metodę studni z warstwami naprzemiennymi: większe bryły na zewnątrz, drobne w środku.</p>
+          </details>
+          <details class="reveal">
+            <summary>
+              Jak uniknąć gorzkiego dymu?
+              <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </summary>
+            <p>Utrzymuj przepływ powietrza powyżej <strong>40%</strong> i używaj sezonowanego drewna. W sekcji doświadczenia ustaw intensywność na <strong>2</strong>, aby uzyskać krystalicznie czysty dym.</p>
+          </details>
+          <details class="reveal">
+            <summary>
+              Co zrobić z niedopalonym węglem?
+              <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </summary>
+            <p>Po odcięciu tlenu odczekaj do całkowitego wystudzenia. Kawałki większe niż 3 cm przesiej i przechowuj w stalowej puszce. Aplikacja w trybie degustacyjnym pokaże, ile możesz odzyskać.</p>
+          </details>
+          <details class="reveal">
+            <summary>
+              Czy intensywny aromat pasuje do delikatnych potraw?
+              <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </summary>
+            <p>Dla ryb i owoców wybierz aromat <strong>neutralny</strong> lub <strong>owocowy</strong>. Tryb dymny rekomendujemy do czerwonych mięs i serów długo dojrzewających.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+    <section class="cta" id="kontakt">
+      <div class="section__inner">
+        <div class="cta-card reveal">
+          <span class="eyebrow">Gotowy na premierę sezonu?</span>
+          <h2 class="section__title">Zamów dedykowany audyt grillowy</h2>
+          <p>Wypełnij krótki briefing i otrzymaj raport z planem temperatur, rekomendacjami produktów oraz listą kontrolną sprzętu w ciągu 24 godzin.</p>
+          <button class="btn microinteraction" type="button" data-open-dialog>Rozpocznij rozmowę</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; <span data-year></span> Żar Mistrzowski. Dopracowany węgiel drzewny dla świadomych twórców smaku.</p>
+  </footer>
+  <button class="back-to-top" type="button" aria-label="Wróć na początek" id="backToTop">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 19V5m0 0-6 6m6-6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </button>
+  <dialog class="dialog" id="briefingDialog" aria-labelledby="dialogTitle">
+    <div class="dialog__card">
+      <button class="dialog__close" type="button" data-close-dialog aria-label="Zamknij okno">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+        </svg>
+      </button>
+      <h2 class="dialog__title" id="dialogTitle">Briefing degustacyjny</h2>
+      <p class="microcopy">Opisz planowane menu, liczbę gości i preferencje aromatu. W odpowiedzi prześlemy personalizowany plan temperatur oraz listę zakupów.</p>
+      <form class="dialog__form" id="dialogForm">
+        <label class="field">
+          <span>Adres e-mail</span>
+          <input type="email" required placeholder="twoj.mail@przyklad.pl" />
+        </label>
+        <label class="field">
+          <span>Opis planu</span>
+          <textarea required placeholder="Napisz, co chcesz przygotować i jakie masz oczekiwania..."></textarea>
+        </label>
+        <button class="btn microinteraction" type="submit">Wyślij briefing</button>
+      </form>
+    </div>
+  </dialog>
+  <svg width="0" height="0" style="position:absolute">
+    <symbol id="icon-spark" viewBox="0 0 24 24">
+      <path d="M12 3c-1.5 2.4-4.4 4.5-4.4 7.9 0 3.6 2.6 6.1 4.4 6.6 1.8-.5 4.4-3 4.4-6.6 0-3.4-2.9-5.5-4.4-7.9Zm0 11.6c-2.2-.6-3.9-2.7-3.9-5.4 0-1.8.9-3.3 2.4-5 .6-.7 1.1-1.5 1.5-2.2.4.7.9 1.5 1.5 2.2 1.5 1.7 2.4 3.2 2.4 5 0 2.7-1.7 4.8-3.9 5.4Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12 8.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z" fill="none" stroke="currentColor" stroke-width="1.4" />
+    </symbol>
+  </svg>
+<script>
+        updateThemeIcon(theme);
+      }
+
+      const storedTheme = localStorage.getItem('charcoal-theme');
+      if (storedTheme === 'light' || storedTheme === 'dark') {
+        applyTheme(storedTheme);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+        applyTheme('light');
+      } else {
+        updateThemeIcon('dark');
+      }
+
+      themeSwitch.addEventListener('click', () => {
+        const nextTheme = body.dataset.theme === 'light' ? 'dark' : 'light';
+        applyTheme(nextTheme);
+      });
+
+      function closeNav() {
+        nav.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+
+      navToggle.addEventListener('click', () => {
+        const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('is-open');
+      });
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          closeNav();
+        });
+      });
+
+      window.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+          closeNav();
+          if (dialog.open) {
+            dialog.close();
+          }
+        }
+      });
+
+      function updateProgress() {
+        const scrollTop = window.scrollY;
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = max > 0 ? Math.min(scrollTop / max, 1) : 0;
+        progressBar.style.width = `${progress * 100}%`;
+        if (scrollTop > 320) {
+          backToTop.classList.add('is-visible');
+        } else {
+          backToTop.classList.remove('is-visible');
+        }
+      }
+
+      backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      document.addEventListener('scroll', updateProgress, { passive: true });
+      updateProgress();
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            navLinks.forEach(link => {
+              link.classList.toggle('is-active', link.getAttribute('href') === `#${id}`);
+            });
+          }
+        });
+      }, { threshold: 0.4 });
+
+      sections.forEach(section => observer.observe(section));
+
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2, rootMargin: '0px 0px -40px 0px' });
+
+      revealEls.forEach(el => revealObserver.observe(el));
+
+      function updateIntensity() {
+        const value = parseInt(intensityRange.value, 10);
+        const data = intensityDescriptions[value];
+        if (!data) return;
+        intensityLabel.textContent = data.label;
+        intensityCopy.textContent = data.copy;
+        glowShade.textContent = data.glow;
+        airflow.textContent = data.airflow;
+        stabilization.textContent = data.stabilization;
+        heroTemp.textContent = data.temp;
+        heroSavings.textContent = data.savings;
+        heroImpact.textContent = data.impact;
+        intensityRange.style.setProperty('--range-fill', `${((value - 1) / 4) * 100}%`);
+      }
+
+      intensityRange.addEventListener('input', updateIntensity);
+      updateIntensity();
+
+      function calculateCoal() {
+        const persons = Math.max(parseFloat(calcPersons.value) || 0, 1);
+        const hours = Math.max(parseFloat(calcHours.value) || 0.5, 0.5);
+        const style = styleMultipliers[calcStyle.value] || styleMultipliers.klasyczny;
+        const intensity = parseInt(intensityRange.value, 10);
+        const intensityFactor = 0.85 + (intensity - 3) * 0.08;
+        const kg = persons * style.base * intensityFactor + hours * 0.35;
+        const reserve = kg * style.reserve;
+        const total = kg + reserve;
+        const zones = intensity >= 4 ? 3 : 2;
+        calcResult.innerHTML = `Potrzebujesz <strong>${total.toFixed(1)}&nbsp;kg</strong> węgla, co zapewni <strong>${zones} stref${zones === 2 ? 'y' : ''}</strong> pracy i ${(style.reserve * 100).toFixed(0)}% rezerwy na dosypywanie.`;
+        return total;
+      }
+
+      [calcPersons, calcHours, calcStyle, intensityRange].forEach(input => {
+        input.addEventListener('input', () => {
+          calculateCoal();
+        });
+      });
+
+      aromaButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          aromaButtons.forEach(other => other.classList.toggle('is-active', other === btn));
+          const aroma = btn.getAttribute('data-aroma');
+          aromaHint.textContent = aromaCopy[aroma];
+        });
+      });
+
+      calculateCoal();
+
+      ritualButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          ritualButtons.forEach(other => other.classList.toggle('is-active', other === btn));
+          ritualTitle.textContent = btn.getAttribute('data-title');
+          ritualDescription.textContent = btn.getAttribute('data-description');
+          ritualTip.textContent = btn.getAttribute('data-tip');
+        });
+      });
+
+      if (rotator) {
+        const words = rotator.getAttribute('data-words').split(',');
+        let index = 0;
+        setInterval(() => {
+          index = (index + 1) % words.length;
+          rotator.style.opacity = '0';
+          setTimeout(() => {
+            rotator.textContent = words[index];
+            rotator.style.opacity = '1';
+          }, 220);
+        }, 3200);
+      }
+
+      function handleMicrointeraction(event) {
+        const target = event.currentTarget;
+        target.classList.remove('is-animating');
+        void target.offsetWidth;
+        target.classList.add('is-animating');
+      }
+
+      microButtons.forEach(btn => {
+        btn.addEventListener('click', handleMicrointeraction);
+      });
+
+      openDialogButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          dialog.showModal();
+        });
+      });
+
+      if (closeDialogButton) {
+        closeDialogButton.addEventListener('click', () => dialog.close());
+      }
+
+      dialog.addEventListener('click', (event) => {
+        const rect = dialog.getBoundingClientRect();
+        const inDialog = event.clientX >= rect.left && event.clientX <= rect.right && event.clientY >= rect.top && event.clientY <= rect.bottom;
+        if (!inDialog) {
+          dialog.close();
+        }
+      });
+
+      dialogForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const submitButton = dialogForm.querySelector('button[type="submit"]');
+        submitButton.disabled = true;
+        submitButton.textContent = 'Wysyłanie...';
+        setTimeout(() => {
+          submitButton.disabled = false;
+          submitButton.textContent = 'Wyślij briefing';
+          dialog.close();
+          alert('Dziękujemy! Sprawdzimy briefing i skontaktujemy się w ciągu 24 godzin.');
+        }, 900);
+      });
+
+      const tiltTargets = Array.from(document.querySelectorAll('[data-tilt]'));
+      const supportsMotion = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (supportsMotion) {
+        tiltTargets.forEach(target => {
+          target.addEventListener('pointermove', (event) => {
+            const rect = target.getBoundingClientRect();
+            const x = (event.clientX - rect.left) / rect.width;
+            const y = (event.clientY - rect.top) / rect.height;
+            const rotateX = (0.5 - y) * 8;
+            const rotateY = (x - 0.5) * 8;
+            target.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+          });
+          target.addEventListener('pointerleave', () => {
+            target.style.transform = '';
+          });
+        });
+      }
+
+      if (yearTarget) {
+        yearTarget.textContent = new Date().getFullYear();
+      }
+
+      updateThemeIcon(body.dataset.theme || 'dark');
+    })();
+  </script>
+</body>
+</html>
