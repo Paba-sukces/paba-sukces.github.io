@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kreator oferty PDF</title>
+  <meta name="description" content="Aplikacja do tworzenia ofert PDF na podstawie tekstu i obrazka." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="panel panel-form" aria-labelledby="form-title">
+      <h1 id="form-title">Kreator oferty na maila</h1>
+      <p class="lead">Wklej treść oferty, dodaj obrazek i wygeneruj gotowy PDF do wysłania w mailu.</p>
+
+      <form id="offer-form" class="form-grid">
+        <label>
+          Temat oferty
+          <input id="offer-title" type="text" placeholder="np. Oferta współpracy - luty 2026" required />
+        </label>
+
+        <label>
+          Dla kogo (opcjonalnie)
+          <input id="offer-recipient" type="text" placeholder="np. Jan Kowalski, Firma XYZ" />
+        </label>
+
+        <label class="full-width">
+          Treść oferty
+          <textarea id="offer-text" rows="12" placeholder="Wklej tutaj treść oferty..." required></textarea>
+        </label>
+
+        <label class="full-width">
+          Obrazek do oferty
+          <input id="offer-image" type="file" accept="image/png,image/jpeg,image/webp" />
+        </label>
+
+        <div class="actions full-width">
+          <button type="button" id="generate-pdf" class="btn-primary">Generuj PDF</button>
+          <a id="download-link" class="btn-secondary disabled" aria-disabled="true">Pobierz PDF</a>
+        </div>
+      </form>
+      <p id="status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="panel panel-preview" aria-labelledby="preview-title">
+      <h2 id="preview-title">Podgląd obrazka</h2>
+      <div class="preview-box" id="preview-box">
+        <p>Po dodaniu pliku zobaczysz tutaj podgląd.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
